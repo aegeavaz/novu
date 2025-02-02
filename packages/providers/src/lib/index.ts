@@ -38,6 +38,7 @@ export * from './nexmo/nexmo.provider';
 export * from './nodemailer/nodemailer.provider';
 export * from './one-signal/one-signal.provider';
 export * from './outlook365/outlook365.provider';
+export * from './pinpoint/pinpoint.provider';
 export * from './plivo/plivo.provider';
 export * from './plunk/plunk.interface';
 export * from './plunk/plunk.provider';

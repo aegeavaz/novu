@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "nanoid": "^3.1.20",
+    "@aws-sdk/client-pinpoint-sms-voice-v2": "3.382.0",
     "@aws-sdk/client-ses": "3.382.0",
     "@aws-sdk/client-sns": "^3.382.0",
     "@azure/communication-sms": "^1.0.0",

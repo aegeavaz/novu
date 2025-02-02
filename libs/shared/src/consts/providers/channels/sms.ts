@@ -30,6 +30,7 @@ import {
   brevoSmsConfig,
   whatsAppBusinessConfig,
   eazySmsConfig,
+  pinpointConfig,
 } from '../credentials';
 import { ChatProviderIdEnum, SmsProviderIdEnum } from '../provider.enum';
 
@@ -280,5 +281,13 @@ export const smsProviders: IProviderConfig[] = [
     credentials: eazySmsConfig,
     docReference: 'https://developers.eazy.im/#678805af-be7b-4487-93a4-c1007b7920f5',
     logoFileName: { light: 'eazy-sms.svg', dark: 'eazy-sms.svg' },
+  },
+  {
+    id: SmsProviderIdEnum.Pinpoint,
+    displayName: 'Pinpoint',
+    channel: ChannelTypeEnum.SMS,
+    credentials: pinpointConfig,
+    docReference: `https://docs.novu.co/channels-and-providers/sms/pinpoint${UTM_CAMPAIGN_QUERY_PARAM}`, //TODO revisar esto
+    logoFileName: { light: 'pinpoint.svg', dark: 'pinpoint.svg' },
   },
 ];

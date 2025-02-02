@@ -1137,3 +1137,25 @@ export const whatsAppBusinessConfig: IConfigCredentials[] = [
     required: true,
   },
 ];
+
+export const pinpointConfig: IConfigCredentials[] = [
+  {
+    key: CredentialsKeyEnum.ApiKey,
+    displayName: 'Access key ID',
+    type: 'string',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.SecretKey,
+    displayName: 'Secret access key',
+    type: 'string',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.Region,
+    displayName: 'AWS region',
+    type: 'string',
+    required: true,
+  },
+  ...smsConfigBase,
+];
